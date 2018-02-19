@@ -413,6 +413,11 @@ th {
 
 .container {
   margin: 0 auto;
+  position: relative;
+}
+
+body {
+  font-family: Affect-Light;
 }
 
 @font-face {
@@ -424,6 +429,7 @@ th {
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fafafa), color-stop(50%, #0495ff));
   background: linear-gradient(to left, #fafafa 50%, #0495ff 50%);
   padding-top: 140px;
+  position: relative;
 }
 
 .header__block-about {
@@ -440,7 +446,7 @@ th {
 .header .wrap-img {
   width: 100%;
   position: relative;
-  height: 1050px;
+  height: 730px;
 }
 
 .header__mackbook {
@@ -448,6 +454,21 @@ th {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.header__arrow {
+  position: absolute;
+  bottom: -90px;
+  left: 100px;
+  z-index: 9;
+}
+
+.vert-line {
+  width: 1px;
+  background-color: white;
+  height: 420px;
+  display: block;
+  margin-left: 120px;
 }
 
 .container-header {
@@ -520,6 +541,112 @@ th {
   display: inline-block;
   margin-top: 193px;
   margin-left: 3%;
+}
+
+.section-social {
+  background-image: linear-gradient(135deg, #0084ff 0%, #06a0ff 83%, #08a6ff 100%);
+  padding-bottom: 270px;
+  overflow: hidden;
+  padding-top: 100px;
+  position: relative;
+}
+
+.section-social .social-list {
+  list-style-type: square;
+  color: white;
+  margin-top: 140px;
+}
+
+.section-social .social-list__link {
+  text-decoration: none;
+  color: white;
+  font-family: Affect-Light;
+  font-size: 12px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+}
+
+.section-social .info {
+  width: 190px;
+  position: relative;
+  margin-left: 20%;
+  margin-top: 120px;
+}
+
+.section-social .info__text {
+  color: #ffffff;
+  font-family: "Road Radio";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.67px;
+  text-transform: uppercase;
+  font-family: Affect-Light;
+}
+
+.section-social .info__close {
+  position: absolute;
+  right: -50px;
+  cursor: pointer;
+}
+
+.section-social .vert-line {
+  position: absolute;
+  top: -100px;
+  right: 240px;
+}
+
+.section-social .vert-line .about {
+  margin-left: 30px;
+  margin-top: 300px;
+  width: 211px;
+  color: #ffffff;
+  font-family: Affect-Light;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.section-social .vert-line .btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding: 8px 40px;
+  border-radius: 6px;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
+}
+
+.section-social .vert-line__circle {
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.section__title {
+  opacity: 0.08;
+  color: #ffffff;
+  font-family: bebas-neue, sans-serif;
+  font-size: 420px;
+  margin: 0;
+  text-align: center;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+}
+
+.section__doctor {
+  margin-left: 38%;
+  position: absolute;
+  top: 10px;
 }
 
 @media (min-width: 1260px) {

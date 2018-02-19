@@ -1,6 +1,7 @@
 .header{
     background: linear-gradient(to left, #fafafa 50%, #0495ff 50%);
     padding-top: 140px;
+    position: relative;
 
     &__block-about{
         color: white;
@@ -16,7 +17,7 @@
     & .wrap-img{
         width: 100%;
         position: relative;
-        height: 1050px;
+        height: 730px;
 
     }
 
@@ -25,6 +26,22 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
+    &__arrow{
+        position: absolute;
+        bottom: -90px;
+        left: 100px;
+        z-index: 9;
+    }
+}
+.vert-line{
+    width: 1px;
+    background-color: white;
+    height: 420px;
+    display: block;
+    margin-left: 120px;
+
+
 }
 
 .container-header{
