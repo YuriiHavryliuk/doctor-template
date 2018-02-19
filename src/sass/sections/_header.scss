@@ -1,5 +1,102 @@
-.section--header{
-    & h1{
-    	color: gray;
+.header{
+    background: linear-gradient(to left, #fafafa 50%, #0495ff 50%);
+    padding-top: 140px;
+    position: relative;
+
+    &__block-about{
+        color: white;
+        width: 45%;
+        padding-top: 20px;
+        font-family: Affect-Light;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 33px;
     }
+
+    & .wrap-img{
+        width: 100%;
+        position: relative;
+        height: 730px;
+
+    }
+
+    &__mackbook{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__arrow{
+        position: absolute;
+        bottom: -90px;
+        left: 100px;
+        z-index: 9;
+    }
+}
+.vert-line{
+    width: 1px;
+    background-color: white;
+    height: 420px;
+    display: block;
+    margin-left: 120px;
+
+
+}
+
+.container-header{
+    display: flex;
+}
+.tech{
+    color: #4a4a4a;
+    margin-left: 3%;
+    margin-top: 150px;
+
+    &__title{
+        font-family: "Road Radio";
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.46px;
+        margin-bottom: 0;
+    }
+    &__line{
+        width: 41px;
+        height: 3px;
+        background-color: #3498db;
+        display: inline-block;
+        margin: 0;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        width: 108px;
+        margin-bottom: 30px;
+        justify-content: space-around;
+    }
+    &__name{
+        color: #4a4a4a;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    & .fl-left{
+        float: left;
+    }
+    & .item-lg{
+        width: 115px;
+    }
+
+}
+.white-line{
+    width: 4%;
+    height: 3px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 193px;
+    margin-left: 3%;
+
 }

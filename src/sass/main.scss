@@ -1,10 +1,12 @@
 @import '_normalize';
 @import '_common';
+@import '_fonts';
 
 
 
 // Your styles:
-@import 'sections/_header';
+@import 'sections/_header'; 
+@import 'sections/_section-social';
 
 @import "sections/breakpoints/xl";
 @import "sections/breakpoints/lg";

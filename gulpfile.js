@@ -7,7 +7,7 @@ var gulp       	 = require('gulp'),
 	del          = require('del'),
 	cache        = require('gulp-cache'),
 	autoprefixer = require('gulp-autoprefixer'),
-	nunjucks 	 = require('gulp-nunjucks')
+	nunjucks 	 = require('gulp-nunjucks'),
 	iconfont     = require('gulp-iconfont'),
 	iconfontCss  = require('gulp-iconfont-css'),
 	fontName = 'wild-icons';
@@ -82,11 +82,11 @@ gulp.task('img', function() {
 
 gulp.task('build', ['clean', 'img', 'sass', 'nunjucks'], function() {
 
-	var buildCss = gulp.src([ 
+	var buildCss = gulp.src([
 		'src/css/main.min.css'])
 	.pipe(gulp.dest('docs/css'))
 
-	var buildFonts = gulp.src('src/fonts/**/*') 
+	var buildFonts = gulp.src('src/fonts/**/*')
 	.pipe(gulp.dest('docs/fonts'))
 
 	var buildJs = gulp.src('src/script/**/*')
