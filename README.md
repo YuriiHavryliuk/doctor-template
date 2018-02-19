@@ -1,2 +1,1 @@
-# doctor-template
- 
+# Doctor-template
