@@ -5,3 +5,42 @@
 body{
 	font-family: Affect-Light;
 }
+
+.v-line-left{
+	margin-left: 120px;
+}
+
+
+
+	.vert-line{
+
+
+		& .about{
+			margin-left: 30px;
+			margin-top: 300px;
+			width: 211px;
+			color: #ffffff;
+			font-family: Affect-Light;
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		& .btn{
+			text-transform: uppercase;
+			text-decoration: none;
+			position: absolute;
+			z-index: 2;
+			color: white;
+			padding: 8px 40px;
+			border-radius: 100px;
+			border: 2px solid #ffffff;
+		}
+
+		&__circle{
+			position: absolute;
+			top: 70%;
+			transform: translateX(-50%);
+		}}

@@ -420,6 +420,41 @@ body {
   font-family: Affect-Light;
 }
 
+.v-line-left {
+  margin-left: 120px;
+}
+
+.vert-line .about {
+  margin-left: 30px;
+  margin-top: 300px;
+  width: 211px;
+  color: #ffffff;
+  font-family: Affect-Light;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.vert-line .btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding: 8px 40px;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
+}
+
+.vert-line__circle {
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 @font-face {
   font-family: "Affect-Light";
   src: url("../font/Affect-Light.woff");
@@ -570,13 +605,12 @@ body {
 .section-social .info {
   width: 190px;
   position: relative;
-  margin-left: 20%;
+  margin-left: 18%;
   margin-top: 120px;
 }
 
 .section-social .info__text {
   color: #ffffff;
-  font-family: "Road Radio";
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.67px;
@@ -616,7 +650,6 @@ body {
   z-index: 2;
   color: white;
   padding: 8px 40px;
-  border-radius: 6px;
   border-radius: 100px;
   border: 2px solid #ffffff;
 }
@@ -644,9 +677,94 @@ body {
 }
 
 .section__doctor {
-  margin-left: 38%;
+  margin-left: 36%;
   position: absolute;
   top: 10px;
+}
+
+.section-patient {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fafafa), color-stop(50%, #0495ff));
+  background: linear-gradient(to left, #fafafa 50%, #0495ff 50%);
+  padding-top: 55px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-patient .section__title {
+  opacity: 0.04;
+  color: #028dff;
+  top: 20%;
+}
+
+.section-patient .block-close {
+  position: absolute;
+  bottom: 30px;
+  right: 170px;
+}
+
+.section-patient .info-close-small {
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 110px;
+  right: 150px;
+}
+
+.section-patient .img-circle {
+  z-index: 2;
+  position: absolute;
+}
+
+.section-patient .img-cross {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(70%, 70%);
+          transform: translate(70%, 70%);
+  z-index: 0;
+}
+
+.section-patient .close-info {
+  width: 180px;
+  height: 96px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #028dff;
+  font-family: Affect-Light;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.67px;
+}
+
+.section-patient .vert-line {
+  position: absolute;
+  height: 505px;
+  top: -55px;
+}
+
+.section-patient .vert-line__circle {
+  top: 75%;
+}
+
+.section-patient .vert-line .about {
+  margin-top: 390px;
+}
+
+.section-patient .section__close {
+  float: right;
+  width: 222px;
+  height: 222px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.section__patient {
+  margin-left: 33%;
+  margin-top: 300px;
+  margin-bottom: -6px;
+  z-index: 1;
+  position: relative;
 }
 
 @media (min-width: 1260px) {
