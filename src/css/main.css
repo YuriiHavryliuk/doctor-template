@@ -455,6 +455,19 @@ body {
           transform: translateX(-50%);
 }
 
+.inp {
+  outline: none;
+  padding: 20px 50px;
+  border-radius: 100px;
+  border: 4px solid #0393ff;
+  color: #0393ff;
+  font-family: Affect-Light;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 @font-face {
   font-family: "Affect-Light";
   src: url("../font/Affect-Light.woff");
@@ -765,6 +778,97 @@ body {
   margin-bottom: -6px;
   z-index: 1;
   position: relative;
+}
+
+.section-doctor {
+  background-color: #fafafa;
+  padding-top: 200px;
+}
+
+.section-doctor .form-search {
+  margin-left: 120px;
+  width: 45%;
+}
+
+.section-doctor .form-search .control-search {
+  position: relative;
+}
+
+.section-doctor .form-search .inp {
+  width: 100%;
+  padding-right: 110px;
+}
+
+.section-doctor .form-search .search-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -120px;
+}
+
+.section-doctor .vert-line {
+  background-color: #0392ff;
+  position: absolute;
+  top: 350px;
+  height: 205px;
+}
+
+.section-doctor .vert-line__circle {
+  top: 35%;
+}
+
+.section-doctor .about {
+  color: #0392ff;
+  margin-top: 95px;
+}
+
+.section-doctor .btn {
+  color: #0392ff;
+  border-color: #0392ff;
+}
+
+.section-doctor .section__doctor {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 170px 0 0 0;
+  z-index: 2;
+  position: relative;
+}
+
+.section-doctor .img-next-small {
+  margin-left: 55px;
+}
+
+.section-doctor .close-info {
+  width: 120px;
+  text-transform: uppercase;
+  color: #028dff;
+  font-family: Affect-Light;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.67px;
+}
+
+.section-doctor .info-next {
+  margin-top: 200px;
+  margin-left: 60px;
+  position: absolute;
+}
+
+.section-images .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.section-images .images__item {
+  width: 33%;
 }
 
 @media (min-width: 1260px) {

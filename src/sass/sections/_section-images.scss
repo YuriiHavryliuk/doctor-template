@@ -1,0 +1,12 @@
+.section-images{
+
+  & .images{
+    display: flex;
+    flex-flow: row wrap;
+
+    &__item{
+      width: 33%;
+    }
+  }
+
+}
