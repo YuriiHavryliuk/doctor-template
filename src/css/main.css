@@ -562,8 +562,9 @@ body {
   height: 100px;
   width: 108px;
   margin-bottom: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tech__name {
@@ -865,10 +866,127 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .section-images .images__item {
   width: 33%;
+}
+
+.section-hist .block-arrow {
+  position: relative;
+  padding: 50px 0;
+  height: 190px;
+}
+
+.section-hist .arrow-bottom {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+  width: 222px;
+  height: 222px;
+}
+
+.section-hist .block-hist {
+  background-image: linear-gradient(135deg, #0084ff 0%, #08a6ff 100%);
+  padding-bottom: 300px;
+}
+
+.section-hist .vert-line {
+  position: absolute;
+  top: 355px;
+  margin-left: 0;
+  height: 620px;
+}
+
+.section-hist .section__mem {
+  opacity: 0.3;
+}
+
+.section-hist .hor-line {
+  width: 330px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 170px;
+  left: 355px;
+}
+
+.section-hist .section__time {
+  position: absolute;
+  top: 150px;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-family: Affect-Light;
+  letter-spacing: 1.17px;
+}
+
+.section-hist .stages {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.section-hist .services {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding-left: 20px;
+  margin-top: 105px;
+}
+
+.section-hist .service__item {
+  position: relative;
+  line-height: 28px;
+}
+
+.section-hist .service__link {
+  text-decoration: none;
+  color: white;
+}
+
+.section-hist .marker {
+  background-color: white;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-hist .marker-active {
+  width: 17px;
+  height: 17px;
+  border: none;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+}
+
+.section-hist .js-active {
+  border: 1px solid #ffffff;
 }
 
 @media (min-width: 1260px) {
